@@ -1,0 +1,315 @@
+:root {
+    --blue: #2e146b;
+    --green: #86f1af;
+
+    --bentham: 'Bentham', serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--roboto);
+}
+
+header {
+    width: 100%;
+    padding: 2rem 1.5rem 0;
+    color: white;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h1 > span {
+    font-weight: lighter;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a {
+    color: white;
+    
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #86f1af;
+    text-decoration-thickness: 3px;
+}
+
+.hero {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--bentham);
+    font-weight: lighter;
+    font-size: 3.4rem;
+    letter-spacing: -4px;
+    word-spacing: 5px;
+    line-height: 50px;
+    padding: 2rem;
+}
+
+.hero img {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    overflow: visible;
+}
+
+
+.shape {
+    position: absolute;
+    inset: 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+    .shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: var(--blue);
+    right: -400px;
+    left: -400px;
+    top: -200px;
+    content: '';
+    bottom: 0;
+    z-index: -999
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #86f1af;
+    border: none;
+}
+button a {
+    color: #2e146b;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+img {
+    width: 300px;
+}
+
+.main{
+    padding: 10px;
+    width: 90%;
+    margin-top: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    display: block;
+    text-align: center;
+    color: #2e146b;
+    padding-bottom: 10px;
+    margin-bottom: 25rem;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+.col-1 {
+    
+}
+
+.number {
+    border: solid var(--blue) 0.5px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--bentham);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--bentham);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    line-height: 1.8rem;
+    
+}
+
+
+.cat {
+    text-align: center;
+    position: relative;
+}
+
+.cat img {
+    position: absolute;
+    left: 50%;
+    top: -45%;
+    transform: translate(-50%, 0);
+    height: 300px;
+    z-index: -99;
+    border-radius: 50%;
+}
+.cat-card {
+    background-color: var(--blue);
+    color: white;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 80%;
+}
+
+.cat-card p {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin: 4rem 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+    margin: 3rem auto 0;
+}
+
+li a {
+    color: #2e146b;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+        line-height: 80px;
+    }
+
+    button a {
+        font-size: 1.4rem;
+    }
+    .main {
+        margin-top: 10rem;
+    }
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        text-align: justify;
+        gap: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .section p {
+        font-size: 1.4rem;
+        line-height: 40px;
+    }
+
+    .number {
+        margin: 0;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .cat {
+        padding-top: 10px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .cat img {
+        position: absolute;
+        left: 15%;
+        top: -25%;
+        transform: translate(-50%, 0);
+        height: 300px;
+        z-index: -99;
+        border-radius: 50%;
+    }
+
+    .cat-card {
+        width: 75%;
+        margin-right: 0;
+        text-align: left;
+        padding: 3.5rem;
+    }
+
+    .cat-card h3 {
+        font-size: 3.5rem;
+        word-spacing: -4px;
+    }
+
+    .cat-card p {
+        font-size: 1.4rem;
+        line-height: 35px;
+    }
+
+    ul {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .description {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .section {
+        display: block;
+        text-align: center;
+    }
+
+    .number {
+        margin: 3rem auto;
+    }
+
+    img {
+        width: 600px;
+    }
+
+    .cat img {
+        height: 600px;
+    }
+}
