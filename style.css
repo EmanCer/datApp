@@ -1,5 +1,5 @@
 :root {
-    --blue: #2e146b;
+    --blue: #241152;
     --green: #86f1af;
 
     --bentham: 'Bentham', serif;
@@ -11,18 +11,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: var(--roboto);
 }
 
 header {
     width: 100%;
-    padding: 2rem 1.5rem 0;
+    height: 750px;
+    padding: 2rem 1.5rem;
     color: white;
 }
+
 h1 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h1 > span {
@@ -38,6 +41,7 @@ nav{
 
 nav a {
     color: white;
+    font-size: 1.5rem;
     
 }
 
@@ -49,24 +53,24 @@ nav a {
 }
 
 .hero {
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-align: center;
 }
 
 h2 {
     font-family: var(--bentham);
+    font-size: 4.5rem;
     font-weight: lighter;
-    font-size: 3.4rem;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
     word-spacing: 5px;
-    line-height: 50px;
+    line-height: 70px;
     padding: 2rem;
 }
 
 .hero img {
     position: absolute;
     left: 50%;
-    top: 400px;
+    top: 650px;
     transform: translate(-50%, 0);
     z-index: 999;
     overflow: visible;
@@ -76,7 +80,7 @@ h2 {
 .shape {
     position: absolute;
     inset: 0;
-    height: 500px;
+    height: 750px;
     overflow: hidden;
 }
 
@@ -93,14 +97,15 @@ h2 {
 }
 
 button {
-    padding: 1rem 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
     background-color: #86f1af;
     border: none;
 }
 button a {
     color: #2e146b;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 img {
@@ -110,9 +115,7 @@ img {
 .main{
     padding: 10px;
     width: 90%;
-    margin-top: 18rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6rem auto 2rem;
 }
 
 .description {
@@ -120,40 +123,38 @@ img {
     text-align: center;
     color: #2e146b;
     padding-bottom: 10px;
-    margin-bottom: 25rem;
 }
 
 .section {
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
-.col-1 {
-    
-}
 
 .number {
-    border: solid var(--blue) 0.5px;
+    border: solid var(--blue) 2px;
     border-radius: 50%;
-    margin: 0 auto 1.5rem;
-    width: 60px;
-    height: 60px;
+    margin: 0 auto 4rem;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--bentham);
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 400;
 }
 
 h3 {
     font-family: var(--bentham);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
 p {
-    line-height: 1.8rem;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: lighter;
     
 }
 
@@ -161,14 +162,16 @@ p {
 .cat {
     text-align: center;
     position: relative;
+    margin-top: 33rem;
 }
 
 .cat img {
     position: absolute;
     left: 50%;
-    top: -45%;
+    top: -40%;
     transform: translate(-50%, 0);
-    height: 300px;
+    width: 400px;
+    height: 400px;
     z-index: -99;
     border-radius: 50%;
 }
@@ -176,8 +179,8 @@ p {
     background-color: var(--blue);
     color: white;
     margin: 0 auto;
-    padding: 2rem;
-    width: 80%;
+    padding: 3rem 2rem;
+    width: 90%;
 }
 
 .cat-card p {
@@ -185,7 +188,7 @@ p {
 }
 
 footer {
-    margin: 4rem 0;
+    margin: 4rem 0 2rem;
 }
 
 ul {
@@ -229,10 +232,18 @@ li a {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         text-align: justify;
-        gap: 3rem;
+        gap: 1rem;
+    }
+
+    .col-1 {
+        width: 15%;
+    }
+
+    .col-2 {
+        width: 85%;
     }
 
     h3 {
@@ -241,7 +252,7 @@ li a {
 
     .section p {
         font-size: 1.4rem;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     .number {
@@ -253,47 +264,74 @@ li a {
     .cat {
         padding-top: 10px;
         width: 95%;
-        margin: auto;
+        margin: 30rem auto 0;
+
     }
 
     .cat img {
         position: absolute;
-        left: 15%;
+        left: 20%;
         top: -25%;
         transform: translate(-50%, 0);
-        height: 300px;
+        height: 400px;
         z-index: -99;
         border-radius: 50%;
     }
 
     .cat-card {
-        width: 75%;
+        width: 70%;
         margin-right: 0;
         text-align: left;
-        padding: 3.5rem;
+        padding: 4rem 3.5rem;
     }
 
     .cat-card h3 {
-        font-size: 3.5rem;
+        font-size: 4rem;
         word-spacing: -4px;
     }
 
     .cat-card p {
-        font-size: 1.4rem;
-        line-height: 35px;
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .cat-card button {
+        margin-top: 0;
     }
 
     ul {
         width: 20%;
     }
+
+    li a {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 1280px) {
 
+    nav {
+        padding: 3rem 10rem 0
+    }
+
+    .hero {
+        margin-top: 2rem;
+    }
+
+    .hero img {
+        top: 530px;
+    }
+
+    h2 {
+        padding-bottom: 0;
+    }
+
     .description {
         display: flex;
         flex-direction: row;
-        
+    }
+
+    .col-1, .col-2 {
+        width: 100%;
     }
 
     .section {
@@ -309,7 +347,12 @@ li a {
         width: 600px;
     }
 
+    .cat {
+        width: 80%;
+    }
+
     .cat img {
-        height: 600px;
+        width: 500px;
+        height: 500px;
     }
 }
